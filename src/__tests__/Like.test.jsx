@@ -34,6 +34,13 @@ describe("Liking a Toy", () => {
         likes = parseInt(toyCard.querySelector('p').textContent.split(' ')[0])
         
         expect(likes).toBe(9);
+        expect(global.fetch).toHaveBeenCalledWith(
+            "http://localhost:3001/toys/1",
+            expect.objectContaining({
+                method: "PATCH",
+                body: JSON.stringify({ likes: 9 }),
+            })
+        );
 
         global.setFetchResponse({
             "id": 1,

@@ -22,5 +22,18 @@ describe("ToyForm Submission", () => {
 
     const newToy = await findByText(firstToy.name)
     expect(newToy).toBeInTheDocument();
+    expect(global.fetch).toHaveBeenCalledWith(
+      "http://localhost:3001/toys",
+      expect.objectContaining({
+        method: "POST",
+        body: JSON.stringify({
+          name: firstToy.name,
+          image: firstToy.image,
+          price: 0,
+          description: "",
+          likes: 0,
+        }),
+      }),
+    );
   });
 });

@@ -1,13 +1,18 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <div id="toy-header">
-      <img
-        src="https://fontmeme.com/permalink/180719/67429e6afec53d21d64643101c43f029.png"
-        alt="toy header"
-      />
-    </div>
+    <header id="toy-header">
+      <Link to="/" className="brand" aria-label="Toy Tales home">
+        Toy Tales
+      </Link>
+      <nav aria-label="Main navigation">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/products">Products</NavLink>
+        <NavLink to="/products/new">Add product</NavLink>
+      </nav>
+    </header>
   );
 }
 

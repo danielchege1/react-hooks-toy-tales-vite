@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img">
+  <rect width="640" height="480" rx="32" fill="#e9eee4"/>
+  <circle cx="320" cy="232" r="132" fill="#f3d9b8"/>
+  <circle cx="218" cy="121" r="58" fill="#bf563f"/>
+  <circle cx="422" cy="121" r="58" fill="#bf563f"/>
+  <circle cx="218" cy="121" r="30" fill="#f3d9b8"/>
+  <circle cx="422" cy="121" r="30" fill="#f3d9b8"/>
+  <circle cx="278" cy="220" r="12" fill="#243f38"/>
+  <circle cx="362" cy="220" r="12" fill="#243f38"/>
+  <ellipse cx="320" cy="265" rx="48" ry="36" fill="#fffaf2"/>
+  <path d="M320 247c-10-15-34-4-25 12l25 23 25-23c9-16-15-27-25-12Z" fill="#bf563f"/>
+  <text x="320" y="426" fill="#37594f" font-family="Georgia,serif" font-size="24" text-anchor="middle">A little Toy Tales magic</text>
+</svg>
